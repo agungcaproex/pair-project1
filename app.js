@@ -9,6 +9,7 @@ var cool = require('cool-ascii-faces');
 app.use(bodyParser.urlencoded({extended:false}))
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
+app.set('port', (process.env.PORT || 5000));
 
 app.locals.helper   = require('./helpers')
 
@@ -27,7 +28,7 @@ app.get('/cool', function(request, response) {
   response.send(cool());
 });
 
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
 
-app.listen(PORT,() => {
-    console.log("application running on port 3000");
-})
