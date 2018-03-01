@@ -4,6 +4,7 @@ const routes        = require('./routes')
 const PORT          = 3000;
 const bodyParser    = require('body-parser')
 const session       = require('express-session')
+var cool = require('cool-ascii-faces');
 
 app.use(bodyParser.urlencoded({extended:false}))
 app.set('view engine', 'ejs')
@@ -21,6 +22,11 @@ app.use(session({
 
 
 app.use('/',routes);
+
+app.get('/cool', function(request, response) {
+  response.send(cool());
+});
+
 
 app.listen(PORT,() => {
     console.log("application running on port 3000");
