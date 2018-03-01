@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "cgdetdscyaqoul",
-    "password": "450bd1f65247fa1035032ffd779181ee65f6c4161272e8533b58314c80d279e3",
-    "database": "dekdm0l6o4jkjs",
-    "host": "ec2-54-243-239-66.compute-1.amazonaws.com",
+    "username": "admin",
+    "password": "@dmin1234",
+    "database": "minilancer",
+    "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "cgdetdscyaqoul",
-    "password": "450bd1f65247fa1035032ffd779181ee65f6c4161272e8533b58314c80d279e3",
-    "database": "dekdm0l6o4jkjs",
-    "host": "ec2-54-243-239-66.compute-1.amazonaws.com",
-    "dialect": "postgres"
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   }
 }
